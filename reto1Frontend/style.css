@@ -1,0 +1,163 @@
+/*fonts\
+font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/*font-family: 'Lexend Deca', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;  
+}
+
+.container {
+    display: inline-flex;
+    background-color: var(--dark-blue-main-background);
+    height:55rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--Dark-blue-card-background);
+    height: 73%;
+    width: 40%;
+    margin-left: 10%;
+    border-bottom-left-radius: 2%;
+    border-top-left-radius: 2%;
+}
+
+.info--header {
+    font-weight: 700;
+    color: var(--white-main-heading-stats);
+    text-align: left;
+    width: 74%;
+    font-size: 2.7rem;
+}
+
+.resaltado {
+    color: var(--soft-violet-accent);
+}
+
+.info--descr {
+    color: var(--slightly-transparent-white-paragraph);
+    font-weight: 400;
+    text-align: left;
+    width: 74%;
+    font-size: 1.5rem; 
+}
+
+.info--tabla {
+    display: flex;
+    width: 74%;
+    color: var(--slightly-transparent-white-paragraph);
+    font-weight:900;
+    text-align: left;
+}
+
+.dato {
+    margin-left: 0;
+}
+
+.text {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.container--foto {
+    height: 73%;
+    width: 40%;
+    margin-right: 10%;
+    background: var(--soft-violet-accent);
+    overflow: hidden;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+img {   
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+     opacity: 0.45;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*para telefono*/
+@media (max-width: 375px) {
+
+    .container {
+        display: flex;
+        padding: 20% 7%;               
+        flex-direction: column-reverse;justify-content: center;
+    }
+
+    .container--info {
+        width: 100%;
+        text-align: center;
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 2%;
+        margin-left: 0%;
+    }
+
+    .info--header {
+        font-size: 1.7rem;        
+    }
+
+    .info--descr {
+        font-size: 1rem;
+    }
+
+    .info--tabla {
+        flex-direction: column;
+        margin-left:41%;
+    }
+
+    .dato {
+        margin-bottom: 10%;
+        font-size: 1.2rem;
+    }
+    .text { 
+        font-size: 0.7rem;
+    }
+
+
+    .container--foto {
+        width: 100%;
+        height: 40%;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 2% ;
+        }
+}
+
+
+/*variables de colores*/
+:root {
+    --dark-blue-main-background: hsl(233, 47%, 7%);
+    --Dark-blue-card-background: hsl(244, 38%, 16%);
+    --soft-violet-accent: hsl(277, 64%, 61%);
+        
+    --white-main-heading-stats: hsl(0, 0%, 100%);
+    --slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}

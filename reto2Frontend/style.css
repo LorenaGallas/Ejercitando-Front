@@ -1,0 +1,541 @@
+ /* colores */
+  :root {
+    /* Background gradient - Intro/CTA mobile nav: */
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Light-red: hsl(353, 100%, 62%);
+  
+    /* Background gradient - body: */
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  }
+  
+  /* *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+  } */
+  
+  body {
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+    text-align: center;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+  }
+  
+  /* @keyframes toggle {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+  
+  header {
+    background-image: url("./images/bg-pattern-intro.svg"),
+      linear-gradient(var(--Very-light-red), var(--Light-red));
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80em, cover;
+    background-position: -20em -15em, center;
+    padding: 3.5em 1.5em 9.7em;
+    border-bottom-left-radius: 7em;
+  }
+  
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-mobile > img {
+    height: 2em;
+  }
+  
+  .nav-toggle {
+    background: transparent;
+    border: none;
+    display: grid;
+    place-items: center;
+  }
+  
+  .icon-burger {
+    display: block;
+    animation: toggle 1s;
+  }
+  
+  .icon-close {
+    display: none;
+    animation: toggle 1s;
+  }
+  
+  .toggle-icon .icon-burger {
+    display: none;
+  }
+  
+  .toggle-icon .icon-close {
+    display: block;
+  }
+  
+  .menus {
+    display: none;
+    position: absolute;
+    top: 8em;
+    right: 1.5em;
+    width: 20em;
+    padding: 2em 1.5em;
+    background: white;
+    border-radius: 0.5em;
+    box-shadow: 0 30px 30px rgba(163, 163, 163, 0.3);
+    animation: toggle 1s;
+  }
+  
+  .toggle-menus {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-title {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 0 auto 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--Very-dark-gray-blue);
+    column-gap: 0.4em;
+  }
+  
+  .menu-title:hover {
+    color: hsl(237, 18%, 21%, 0.6);
+  }
+   
+  .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .menu-dropdown {
+    display: none;
+    background: rgba(163, 163, 163, 0.4);
+    margin: -1em 0 1.5em 0;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    animation: toggle 1s;
+  }
+  
+  .toggle-dropdown .menu-dropdown{
+    display: block;
+  }
+  
+  .menu-dropdown li {
+    margin: 1em;
+  }
+  
+  .menu-dropdown li a {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+  }
+  .menu-dropdown li a:hover {
+    color: var(--Very-dark-gray-blue);
+  }
+
+  .login-signup button {
+    display: block;
+    margin: 1.5em auto 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
+  }
+  
+  .login-btn {
+    color: var(--Very-dark-gray-blue);
+    background: transparent;     
+  }
+  
+  .login-btn:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .signup-btn {  
+    padding: 0.75em 2em;
+    border-radius: 2em;
+    color: white;
+    background-image: linear-gradient(
+    to right,
+    var(--Very-light-red),
+    var(--Light-red)
+  );
+  }
+   
+  .signup-btn:hover {
+    color: white;
+    background: hsl(353, 100%, 80%);
+  }
+  
+  .header-description {
+    color: white;
+    margin: 7.4em auto 0;
+    width: 90%;
+  }
+  
+  .header-description h1 {
+    font-size: 2em;
+  }
+  
+  .header-description p {
+    font-size: 1em;
+    margin: 1em 0 3em;
+  }
+  
+  .header-description-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+  }
+  
+  .header-description-btn button {
+    width: 9em;
+    height: 3em;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 2em;
+    cursor:pointer;
+  }
+  
+  .start-btn {
+    border: none;
+    color: var(--Light-red);
+    background: white;
+  }
+  .start-btn:hover {
+    color: white;
+    background: hsl(353, 100%, 80%);
+  }
+  
+  .learn-btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+  }
+  .learn-btn:hover {
+    border: 1px solid white;
+    background: hsl(353, 100%, 80%);
+    color: var(--Light-red);
+  }
+  
+  .div--one {
+    margin: 6.5em 0 17em;
+    color: var(--Very-dark-desaturated-blue);
+    background-image: url("./images/illustration-editor-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 5em;
+    background-size: 25em;
+  }
+  
+  .div--one-title {
+    margin-bottom: 13.5em;
+  }
+  
+  .div--one-description h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .div--one-description {
+    width: 80%;
+    margin: 0 auto 3em;
+  }
+  
+  .div--one-description p {
+    line-height: 1.8;
+  }
+  
+  .div--two {
+    background-image: url("./images/bg-pattern-circles.svg"),
+      linear-gradient(
+        var(--Very-dark-gray-blue) 60%,
+        var(--Very-dark-desaturated-blue)
+      );
+    background-repeat: no-repeat, no-repeat;
+    background-size: 37.5em, cover;
+    background-position: 50% -14.5em, center;
+    padding: 14.6em 2em 7.5em;
+    color: white;
+    position: relative;
+    border-top-right-radius: 7em;
+  }
+  
+  .div--two img {
+    position: absolute;
+    max-width: 375px;
+    top: -11.5em;
+    left: 4%;
+  }
+  
+  .div--two h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+  }
+  
+  .div--two p {
+    line-height: 2;
+  }
+ 
+  .div--three--container {
+    padding: 28.8em 2.5em 6.3em;
+    color: var(--Very-dark-desaturated-blue);
+    background-image: url("./images/illustration-laptop-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 4em;
+  }
+  
+  .div--three h1 {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+  }
+  
+  .div--three p {
+    line-height: 2;
+    margin-bottom: 2.5em;
+  }  
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    background: var(--Very-dark-gray-blue);
+    padding: 4.7em 0;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    border-top-right-radius: 7em;
+  }
+  
+  .footer-container > img {
+    margin-bottom: 4.5em;
+  }
+  
+  .link {
+    margin-bottom: 3em;
+  }
+  
+  .link > p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+
+  .link ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .link li {
+    margin-bottom: 1em;
+    margin-left: 41%;
+    text-align: start;
+  }
+  
+  .link a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1em;
+  }
+ 
+  .attribution {
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .attribution a {
+    color: var(--Very-light-red);
+    text-decoration: none;
+  }
+  .attribution a:hover {
+    color: var(--Light-red);
+    text-decoration: none;
+  }
+
+  /*Desktop*/
+  
+  @media screen and (min-width: 1150px) {
+    header {
+      padding: 4em 10em 10em;
+    }
+    .nav-mobile > img {
+      height: 2.5em;
+    }
+    .nav-mobile button {
+      display: none;
+    }
+    .nav-desktop {
+      display: flex;
+      column-gap: 3em;
+    }
+    .menus {
+      display: flex;
+      position: unset;
+      top: unset;
+      right: unset;
+      width: unset;
+      padding: unset;
+      background: unset;
+      border-radius: unset;
+      box-shadow: unset;
+      align-items: center;
+    }
+    .menu {
+      position: relative;
+    }
+    .menu-center {
+      display: flex;
+    }
+    .menu-title {
+      margin: 0 1em;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .menu-title:hover {
+      color: white;
+      text-decoration-line: underline;
+      text-decoration-thickness: 2px;
+    }
+    .menu-title svg path {
+      stroke: white;
+    }
+    .menu-dropdown {
+      background: white;
+      position: absolute;
+      left: 0;
+      top: 3em;
+      text-align: left;
+      margin: unset;
+      width: 10em;
+      padding: 1em 0 1em 0.5em;
+      box-shadow: 0 30px 30px rgba(82, 82, 82, 0.5);
+    }
+    .toggle-dropdown {
+      display: block;
+    }
+    .menu-dropdown li a {
+      color: rgba(0, 0, 0);
+      font-weight: 300;
+    }
+    .menu-dropdown li a:hover {
+      color: unset;
+      font-weight: 600;
+    }
+    .login-signup {
+      display: flex;
+      column-gap: 2em;
+      position: absolute;
+      right: 5em;
+    }
+    .login-signup button {
+      margin: unset;
+    }
+    .login-btn {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .login-btn:hover {
+      color: white;
+      text-decoration-line: underline;
+      text-decoration-thickness: 2px;
+    }
+    .signup-btn {
+      background-image: unset;
+      background: white;
+      color: var(--Light-red);
+    }
+    .signup-btn:hover {
+      color: white;
+      background: hsl(353, 100%, 80%);
+    }
+    .header-description h1 {
+      font-size: 4em;
+    }
+    .header-description p {
+      font-size: 1em;
+    }
+    .div--one {
+      margin: unset;
+      padding: 9.5em 0 13em;
+      background-image: url("./images/illustration-editor-desktop.svg");
+      background-position: right -14em center;
+      background-size: 60%;
+    }
+    .div--one-title {
+      margin-bottom: 2.5em;
+      font-size: 2.5em;
+    }
+    .div--one-description {
+      width: 34%;
+      margin: 0 auto 3em 10.3em;
+      text-align: left;
+    }
+    .div--two{
+      background-size: 63em, cover;
+      background-position: -13em -30em, center;
+      padding: 7.5em 0;
+      text-align: left;
+    }
+    .div--two img {    
+      position: absolute;
+      max-width: unset;
+      width: 40%;
+      top: unset;
+      left: 7em;
+      top: 56%;
+      transform: translateY(-50%);    
+    }
+
+    .div--two-description {
+      width: 38%;
+      margin: 0 10% 0 auto;
+    }
+    .div--three--container {
+      padding: 21% 0 19%;
+      background-position: left -75% top 50%;
+      background-size: 75%;
+    }
+    .div--three {
+      width: 38%;
+      margin: 0 10% 0 auto;
+    }
+    footer {
+      padding: 4.7em 10em;
+    }
+    .footer-container {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 16.5%;
+      text-align: left;
+    }
+    .link > p {
+      font-size: 1.2em;
+      margin: 0.5em 0 1.5em;
+    }
+  }
+  
+/* fonts */
+/* 'Overpass', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+
+/* 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* 375 movile 
+1440 besktop */

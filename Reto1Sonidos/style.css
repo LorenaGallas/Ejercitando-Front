@@ -1,0 +1,75 @@
+html {
+    font-size: 10px;
+    background-image: url('https://media.istockphoto.com/photos/natural-backgrounds-picture-id167388516?s=612x612');
+    background-size: cover;
+  }
+  
+  .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 87px;
+
+  }
+
+  .titulo1{
+    font-size: 25px;
+    color: rgb(155, 22, 111);
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .subtitulo{
+    font-size: 15px;
+    color: rgb(155, 22, 111);
+    text-align: center;
+  }
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .teclas {
+    display: grid;
+    background-image: url(..\imagenes\fondo.jpg);
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .tecla {
+    border: .4rem solid rgb(155, 22, 111);
+    border-radius: 50%;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: rgb(155, 22, 111);
+    background: rgba(228, 175, 175, 0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .tocando {
+    transform: scale(1.5);
+    border-color: #6a08a3;
+    box-shadow: 0 0 1rem #6a08a3;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sonido {
+    font-size: 0.8 rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(78, 6, 54);
+  }
+  
