@@ -1,0 +1,123 @@
+/* fonts */
+/* 'Overpass', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+
+/* 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* colores */
+:root {
+    --dark-gray-blue: hsl(236, 11%, 27%);
+
+    --dark-gray-border: hsl(236, 24%, 22%);
+}
+
+* {
+ margin: 0 auto;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    text-align: center;
+    color: black;
+  }
+
+.ap--fundamentales,
+.educacion,
+.extralaboral,
+.referencias,
+.inf--personal,  
+.ap--tecnicas,
+.laboral,
+.proyectos {
+    border-radius: 2em;
+    border: 3px  solid var(--dark-gray-border);
+    margin: 1em;   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    height: 7em;
+    align-items: center;
+    background-color:  var(--dark-gray-blue);
+    color: whitesmoke;
+    border-radius: 2em;
+    margin: 1em;  
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.header--datos--contacto {
+    margin-left: 1.2em;
+}
+ 
+.datos--contacto {
+    list-style: none;
+    margin-right: 10em;
+    font-size: 0.8em
+}
+ 
+.header--titular {
+    margin-right: 3em;
+    font-size: 1em;
+}
+
+p {
+    padding: 1em;    
+    font-size: 0.9em; 
+    text-align: start;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: start;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style-position: outside;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+.ultimo {
+    grid-column: 1/4;
+}
+
+ .educacion--contenedor,
+ .extralaboral--contenedor,
+ .referencias--contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: start;
+    padding: 1em;
+    font-size: 0.9em;
+ }
+
+ .lista--educacion {
+     margin-bottom: 1em;
+ }
+
+ .extralaboral--contenedor a {
+     color: var(--dark-gray-blue);
+ }
+
+ .lista--proyectos {
+     text-align: left;
+     font-size: 0.9em;
+ }
+
+ .proyectos a {
+    color: var(--dark-gray-blue);
+ }
+
+ .repo {   
+     font-weight: bold;   
+ }
