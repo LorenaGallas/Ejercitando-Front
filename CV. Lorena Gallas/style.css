@@ -42,13 +42,13 @@ header {
     height: 7em;
     align-items: center;
     background-color:  var(--dark-gray-blue);
-    color: whitesmoke;
+    color: white;
     border-radius: 2em;
     margin: 1em;  
 }
 
 a {
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
 }
 

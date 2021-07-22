@@ -1,0 +1,121 @@
+*{
+    margin: 0 auto;
+}
+
+body {
+    display:flex;
+    user-select:none;
+    justify-content:center;
+    background-color: rgb(166, 3, 74);
+    width: 80%;
+    height: 80%;
+}
+
+h1 {
+    color: #fff;
+    position: absolute;
+    margin-top: 5em;
+    background: linear-gradient(90deg,rgb(34, 123, 211),rgb(170, 18, 170));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    padding: 0.3em;
+    box-shadow: 0 0 20px 2px #5055da;
+    border-radius: 0.8em;
+    transition: 0.2s;
+}
+
+h1:active{
+    transform:scale(0.9);
+    box-shadow:0 0 30px 2px rgb(73, 5, 73);
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 24em);
+    gap: 1.5em;
+    width: auto;
+    height: auto;
+    margin-top: 7em;
+    padding: 1em;
+}
+
+.btn {
+    width: 7em;
+    height: 3.5em;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+.btn-uno {
+    font-size:18px;font-weight:bold ;
+    color:#fff;transition:0.2s;
+    background:rgb(65, 197, 25);
+    grid-column:1;grid-row:1;
+}
+.btn-uno:active {
+    transform:scale(0.8);
+    background:#ffd000;
+}
+
+
+.btn-dos{
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    transition:0.2s;
+    background:rgb(255,50,55);
+    grid-column:1;
+    grid-row:2;
+}
+.btn-dos:active{
+    transform:rotateZ(-40deg);
+}
+
+.btn-tres{
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;background:rgb(255,205,0);
+    grid-row:3;
+    grid-column:1;
+}
+.btn-tres:active{
+    clip-path:polygon(0 0 , 15% 50% , 0 100% , 50% 75% , 100% 100% , 75% 50% , 100% 0 , 50% 15% );
+}
+
+.btn-cuatro{
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    transition:0.2s;
+    background:rgb(167, 27, 167);
+    grid-row:1;
+    grid-column:2;
+}
+.btn-cuatro:active{
+    background:rgb(240, 80, 173);
+    transform:scale(1.5);
+}
+
+.btn-cinco{
+    font-size:18px;font-weight:bold;
+    color:#fff;transition:0.3s;
+    background:rgb(180, 10, 10);
+    grid-column:2;
+    grid-row:2;
+}
+.btn-cinco:active{
+    transform:rotateZ(40deg);
+}
+
+.btn-seis{
+font-size:18px;font-weight:bold;
+color:#fff;background:rgb(10,255,5);
+grid-row:3;grid-column:2;
+}
+.btn-seis:active{
+    clip-path: circle(50%);
+}
+
+
+
