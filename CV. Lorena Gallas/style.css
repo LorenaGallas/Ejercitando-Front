@@ -92,10 +92,16 @@ ul {
 }
 
  .educacion--contenedor,
- .extralaboral--contenedor,
+
  .referencias--contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    text-align: start;
+    padding: 1em;
+    font-size: 0.9em;
+ }
+
+ .extralaboral--contenedor {
     text-align: start;
     padding: 1em;
     font-size: 0.9em;
