@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript to do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor--tareas">
+        <h2>Mi Lista de Tareas</h2>
+        <p>Doble click en un item para darlo por terminado</p>
+        <form name="agregador--tarea">
+            <input type="text" id="tarea--entrada--box" />
+        </form>
+        <button id="agregar--btn" class="pretty-button">Agregar</button>
+        <br />
+        <ol id="tarea--lista">
+        </ol>
+        <div id="control-contenedor">
+            <button id="limpiar--completo--btn" class="pretty-button">Limpiar Completado</button>
+            <button id="vaciar--btn" class="pretty-button">Vaciar Lista</button>
+            <button id="guardar--btn" class="pretty-button">Guardar Lista</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

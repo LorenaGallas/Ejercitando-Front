@@ -1,0 +1,114 @@
+body {
+    background-color: #3ba13b;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.contenedor--tareas {
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-weight: 300;
+}
+
+.contenedor--tareas h2 {
+    margin: 0;
+}
+
+.contenedor--tareas p {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
+}
+
+.contenedor--tareas ol {
+    margin: 20px 0;
+}
+
+.contenedor--tareas ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+/*  
+un hijo de por medio*/
+.contenedor--tareas ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.contenedor--tareas .completado {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.contenedor--tareas .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.contenedor--tareas .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.contenedor--tareas input {
+    padding: 3px 6px;
+}
+
+.contenedor--tareas form {
+    display: inline-block;
+}
+
+#control-contenedor {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor--tareas #clear-button {
+    background-color: #49B749;
+}
+
+.contenedor--tareas #empty-button {
+    background-color: #9B1C20;
+}
+
+.contenedor--tareas #save-button {
+    background-color: #49B749;
+}
+
+@media only screen and (min-width: 1400px) {
+    .contenedor--tareas {
+        width: 50%;
+    }
+
+    .contenedor--tareas input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .contenedor--tareas {
+        width: 75%;
+    }
+
+    .contenedor--tareas input {
+        width: 400px;
+    }
+}
